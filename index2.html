@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact & To-Do Summary</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Contact Form -->
+  <div class="contact-form">
+    <h2>Contact Us</h2>
+    <form id="contactForm">
+      <input type="text" id="name" placeholder="Full Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      
+      <h3>To-Do List</h3>
+      <div class="todo">
+        <input type="text" id="taskInput" placeholder="Enter a task">
+        <button type="button" id="addTaskBtn">Add Task</button>
+        <ul id="taskList"></ul>
+      </div>
+      
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <!-- Display Results -->
+  <div id="submittedData" class="submitted-data"></div>
+
+  <script src="web.js"></script>
+</body>
+</html>
